@@ -25,7 +25,10 @@ export class CursosService {
   }
 
   async findOne(id: string) {
-    const curso = await this.db.curso.findFirst({ where: { id } });
+    const curso = await this.db.curso.findFirst({
+      where: { id },
+      include: { estudantes: true },
+    });
     if (!curso) {
       throw new NotFoundException('Curso não encontrado');
     }
