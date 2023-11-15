@@ -24,7 +24,6 @@ export class EstudantesController {
     @UploadedFile() imagemPerfil: Express.Multer.File,
     @Body() createEstudanteDto: CreateEstudanteDto,
   ) {
-    console.log(imagemPerfil);
     return this.alunosService.create(imagemPerfil, createEstudanteDto);
   }
 
