@@ -13,7 +13,7 @@
 
 ## Utilizando a API em nuvem
 
-- HOST: https://api-escola-production.up.railway.app
+- https://api-escola-production.up.railway.app
 
 ### Rercursos
 
@@ -49,7 +49,7 @@
       <td>Cria um novo curso</td>
       <td>Cursos</td>
       <td>JSON</td>
-      <td>nome: String</td>
+      <td><table><tr><td>nome</td><td>string</td></tr></table></td>
     </tr>
     <tr>
       <td>PATCH</td>
@@ -57,7 +57,7 @@
       <td>Atualiza um curso</td>
       <td>Cursos</td>
       <td>JSON</td>
-      <td>nome: String</td>
+      <td><table><tr><td>nome</td><td>string</td></tr></table></td>
     </tr>
     <tr>
       <td>DELETE</td>
@@ -90,10 +90,26 @@
       <td>Estudantes</td>
       <td>FORM DATA</td>
       <td>
-        imagemPerfil: File</br>
-        nome: String</br>
-        sobrenome: String</br>
-        cursoId: UUID</br>
+        <table>
+          <tbody>
+            <tr>
+              <td>nome</td>
+              <td>string</td>
+            </tr>
+            <tr>
+              <td>nome</td>
+              <td>string</td>
+            </tr>
+            <tr>
+              <td>sobrenome</td>
+              <td>string</td>
+            </tr>
+            <tr>
+              <td>cursoId</td>
+              <td>uuid</td>
+            </tr>
+          </tbody>
+        </table>
       </td>
     </tr>
     <tr>
@@ -102,10 +118,23 @@
       <td>Atualiza um estudante</td>
       <td>Estudantes</td>
       <td>JSON</td>
-       <td>
-        nome: String</br>
-        sobrenome: String</br>
-        cursoId: UUID</br>
+      <td>
+        <table>
+          <tbody>
+            <tr>
+              <td>nome</td>
+              <td>string</td>
+            </tr>
+            <tr>
+              <td>sobrenome</td>
+              <td>string</td>
+            </tr>
+            <tr>
+              <td>cursoId</td>
+              <td>uuid</td>
+            </tr>
+          </tbody>
+        </table>
       </td>
     </tr>
     <tr>
